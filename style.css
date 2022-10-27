@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #218976e7;
+
+}
+
+input{
+    width: 100%;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    margin: 10px 0px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+   
+}
+
+.logo{
+    display: block;
+    width: 100px;
+    height: 120px;
+}
+
+.textosimagem{
+    display: block;
+    width: 560px;
+    
+}
+
+.sectionForm{
+    width: 100%;
+}
+
+
+fieldset{
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input{
+    margin: 5px 0px 10px 0px;
+    padding: 8px;
+    border: 0px;
+    border-radius: 3px;
+}
+label{
+    margin: 0px 0px 100px 0px;
+    color: rgb(242, 228, 228);
+    font-weight: 100;
+}
+
+.botaoform{
+    border: none;
+    border-radius: 8px;
+    background-color: #B03C10;
+    padding: 12px;
+    color: aliceblue;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: rgb(242, 228, 228);
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #f0f1f2;
+}
