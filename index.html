@@ -8,56 +8,60 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Documento</title>
-    <title>Document</title>
 </head>
 
 <body>
     <header>
-       <nav>
-        <div>
-            <img src="logo.png" class="logo" alt="logo">
-        </div>
-        <ul>
-            <li> <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a></li>
-        </ul>
-       </nav>
+        <nav>
+            <img src="logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="https://rocketseat.com.br">Rocketseat</a></li>
+                <li><a href="https://dsolucoes.com">Dsoluções</a></li>
+                <label class="switch">
+                    <input type="checkbox" onchange="darkMode()">
+                    <span class="slider round"></span>
+                </label>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
-                
-                <img src="animaçao.svg" class="textosimagem" alt="animação">
-         </section>
-  <section>
-    <div class="textos">
-        <h1>Cadastre-se!</h1>
-        <h3>E entre para nosso time.</h3>
-        
-    </div>
-    <fieldset>
-    <form action="" class="cadastro">
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="Nome" id="nome" placeholder="Nome" size="75" autocomplete="none">
-        </div>
-        <div>
-            <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" placeholder="Telefone" size="75">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email" minlength="12" size="75" autocomplete="none">
-        </div>
-        <div>
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" placeholder="Senha" size="75">
-        </div>
-        <div>
-            <button type="submit" class="botaoform">Enviar</button>
-        </div>
-        </form>
-    </fieldset>
- </section>
-</main>
+            <img src="animaçao.svg" class="textosimagem" alt="animação">
+        </section>
+        <section id="sectionform">
+            <div class="textos">
+                <h1>Cadastre-se!</h1>
+                <h3>E entre para nosso time.</h3>
+
+            </div>
+            <fieldset>
+                <legend>Espaço de Cadastro</legend>
+                <form action="" class="cadastro">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="Nome" id="nome" placeholder="Nome" size="75" autocomplete="none">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Telefone" size="75" autocomplete="none">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="text" placeholder="Email" minlength="12" size="75">
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" size="75">
+                    </div>
+                    <div>
+                        <button type="submit" class="botaoform">Cadastrar</button>
+                    </div>
+                </form>
+            </fieldset>
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

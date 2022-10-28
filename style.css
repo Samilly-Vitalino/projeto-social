@@ -6,8 +6,11 @@
 }
 
 body{
-    background: #218976e7;
+    background-color: #218976e7;
+}
 
+.dark{
+    background-color:#1A202C ;
 }
 
 input{
@@ -25,24 +28,17 @@ header{
     margin: 10px 0px;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 4rem;
-   
-}
-
 .logo{
     display: block;
     width: 100px;
-    height: 120px;
+}
+
+#sectionform{
+    margin: 0px 10px;
 }
 
 .textosimagem{
-    display: block;
-    width: 560px;
-    
+    display: none;
 }
 
 .sectionForm{
@@ -55,6 +51,10 @@ fieldset{
     border-radius: 8px;
 }
 
+legend{
+    color: antiquewhite;
+}
+
 input{
     margin: 5px 0px 10px 0px;
     padding: 8px;
@@ -62,7 +62,6 @@ input{
     border-radius: 3px;
 }
 label{
-    margin: 0px 0px 100px 0px;
     color: rgb(242, 228, 228);
     font-weight: 100;
 }
@@ -73,8 +72,11 @@ label{
     background-color: #B03C10;
     padding: 12px;
     color: aliceblue;
+    transition:300ms;
 }
-
+.botaoform:hover{
+    color:#893616cc;
+}
 .textos{
     display: flex;
     flex-direction: column;
@@ -82,11 +84,126 @@ label{
     color: rgb(242, 228, 228);
 }
 
-ul li{
+header nav {
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+}
+
+header nav img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li {
+    display: none;
     list-style: none;
 }
 
-ul li a{
-    text-decoration: none;
+header nav ul li a {
     color: #f0f1f2;
+    text-decoration: none;
+}
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media(min-width: 991px) {
+    input{
+        width: 100%;
+    }
+
+    .logo{
+    width: 130px;
+    margin: 0px 0px 0px 20px;
+    }
+
+    .textosimagem{
+        display: block;
+        width: 560px;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+       justify-content: space-around;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header nav img {
+        width: 130px;
+    
+    }
 }
