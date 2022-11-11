@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Página de cadastro</title>
 </head>
 
@@ -32,36 +33,48 @@
             <div class="textos">
                 <h1>Cadastre-se!</h1>
                 <h3>E entre para nosso time.</h3>
-
             </div>
             <fieldset>
                 <legend>Espaço de Cadastro</legend>
                 <form action="" class="cadastro">
                     <div>
                         <label for="nome">Nome</label>
-                        <input type="text" name="Nome" id="nome" placeholder="Nome" size="75" autocomplete="none">
+                        <input type="text" name="Nome" id="nome" placeholder="Nome" size="75" autocomplete="off">
                     </div>
                     <div>
                         <label for="telefone">Telefone</label>
-                        <input type="text" name="telefone" id="telefone" placeholder="Telefone" size="75" autocomplete="none">
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" size="75"
+                            autocomplete="off">
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input id="email" type="text" placeholder="Email" minlength="12" size="75">
+                        <input id="email" type="email" placeholder="Email" minlength="12" size="75" autocomplete="off"> 
                     </div>
                     <div>
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Senha" size="75">
+                        <div class="pass">
+                            <input type="password" name="senha" id="senha" placeholder="Senha" size="75">
+                            <div class="show" onclick="showPass()"><i class="fa-solid fa-eye"></i></div>
+                            <div class="block" onclick="showPass()"><i class="fa-regular fa-eye-slash"></i></div>
+
+                        </div>
                     </div>
                     <div>
                         <button type="submit" class="botaoform">Cadastrar</button>
                     </div>
                 </form>
             </fieldset>
-            
         </section>
     </main>
+
+
+
+
+
     <script src="script.js"></script>
+
 </body>
+
+
 
 </html>

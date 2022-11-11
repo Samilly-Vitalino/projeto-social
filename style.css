@@ -13,10 +13,6 @@ body{
     background-color:#1A202C ;
 }
 
-input{
-    width: 100%;
-}
-
 main{
     margin-top: 20px;
     display: flex;
@@ -24,9 +20,6 @@ main{
     justify-content: space-around;
 }
 
-header{
-    margin: 10px 0px;
-}
 
 .logo{
     display: block;
@@ -35,14 +28,6 @@ header{
 
 #sectionform{
     margin: 0px 10px;
-}
-
-.textosimagem{
-    display: none;
-}
-
-.sectionForm{
-    width: 100%;
 }
 
 
@@ -56,6 +41,7 @@ legend{
 }
 
 input{
+    width: 100%;
     margin: 5px 0px 10px 0px;
     padding: 8px;
     border: 0px;
@@ -109,6 +95,25 @@ header nav ul li a {
     color: #f0f1f2;
     text-decoration: none;
 }
+
+
+
+.pass{
+    position: relative;
+}
+
+.pass i{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color: rgb(17, 16, 16);
+}
+
+.block{
+    display: none;
+}
+
+
 
 
 
